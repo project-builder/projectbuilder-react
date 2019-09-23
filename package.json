@@ -1,0 +1,29 @@
+{
+  "name": "projectbuilder-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node lib/index.js",
+    "dev": "tsc && lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-builder/projectbuilder-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/project-builder/projectbuilder-react/issues"
+  },
+  "homepage": "https://github.com/project-builder/projectbuilder-react#readme",
+  "dependencies": {
+    "@types/node": "^12.7.5",
+    "fs-extra": "^8.1.0",
+    "shelljs": "^0.8.3",
+    "typescript": "^3.6.3"
+  }
+}
