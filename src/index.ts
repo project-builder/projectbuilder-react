@@ -7,10 +7,7 @@ import createHTML from './createHTML';
 import createReactSCSS from './createReactSCSS'
 
 import createPackageJson from './createPackageJson';
-import createAPIGet from './createAPIGet';
-import createAPIPost from './createAPIPost';
-import createAPIPut from './createAPIPut';
-import createAPIDeleteOne from './createAPIDeleteOne';
+import {createAPIGet, createAPIPost, createAPIPut, createAPIDeleteOne} from './createAPIFiles'
 
 
 
