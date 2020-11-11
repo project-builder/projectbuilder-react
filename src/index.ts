@@ -7,6 +7,12 @@ import createHTML from './createHTML';
 import createReactSCSS from './createReactSCSS'
 
 import createPackageJson from './createPackageJson';
+import createAPIGet from './createAPIGet';
+import createAPIPost from './createAPIPost';
+import createAPIPut from './createAPIPut';
+import createAPIDelete from './createAPIDelete';
+
+
 
 
 const createFile = async function(){
@@ -32,6 +38,12 @@ const createFile = async function(){
   let appDir = await fs.ensureDir(`${srcDir}/app`)
 
   let apiDir = await fs.ensureDir(`${srcDir}/API`)
+  await fs.outputFile(`${apiDir}/get.tsx`, createAPIGet());
+  await fs.outputFile(`${apiDir}/post.tsx`, createAPIPost());
+  await fs.outputFile(`${apiDir}/put.tsx`, createAPIPut());
+  await fs.outputFile(`${apiDir}/delete.tsx`, createAPIDelete());
+
+
 
   let componentDir = await fs.ensureDir(`${appDir}/components`);
   let stylesDir = await fs.ensureDir(`${appDir}/styles`);
