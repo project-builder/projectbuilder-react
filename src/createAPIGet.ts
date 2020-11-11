@@ -1,6 +1,5 @@
 const createAPIGet = () =>
-    `
-import axios from 'axios';
+`import axios from 'axios';
 
 const getAll = async () => {
     let url = \`\`

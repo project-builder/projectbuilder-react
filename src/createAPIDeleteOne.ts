@@ -1,11 +1,10 @@
 const createAPIDeleteOne = () =>
-`
-import axios from 'axios';
+`import axios from 'axios';
 
 const deleteOne = async () => {
     let url = \`\`;
     let objBody = {}
-    let res = await axios.deleteOne(url, objBody)
+    let res = await axios.delete(url, objBody)
 return res
 
 }

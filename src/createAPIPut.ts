@@ -1,6 +1,5 @@
 const createAPIPut = () =>
-`
-import axios from 'axios';
+`import axios from 'axios';
 
 const put = async () => {
     let url = \`\`;

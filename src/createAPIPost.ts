@@ -1,6 +1,5 @@
 const createAPIPost = () =>
-`
-import axios from 'axios';
+`import axios from 'axios';
 
 const post = async () => {
     let url = \`\`;
