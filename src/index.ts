@@ -10,7 +10,7 @@ import createPackageJson from './createPackageJson';
 import createAPIGet from './createAPIGet';
 import createAPIPost from './createAPIPost';
 import createAPIPut from './createAPIPut';
-import createAPIDelete from './createAPIDelete';
+import createAPIDeleteOne from './createAPIDeleteOne';
 
 
 
@@ -41,7 +41,7 @@ const createFile = async function(){
   await fs.outputFile(`${apiDir}/get.tsx`, createAPIGet());
   await fs.outputFile(`${apiDir}/post.tsx`, createAPIPost());
   await fs.outputFile(`${apiDir}/put.tsx`, createAPIPut());
-  await fs.outputFile(`${apiDir}/delete.tsx`, createAPIDelete());
+  await fs.outputFile(`${apiDir}/deleteOne.tsx`, createAPIDeleteOne());
 
 
 
