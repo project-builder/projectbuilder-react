@@ -8,8 +8,12 @@ import createReactSCSS from './createReactSCSS'
 
 import createPackageJson from './createPackageJson';
 import {createAPIGet, createAPIPost, createAPIPut, createAPIDeleteOne} from './createAPIFiles'
+import { dependencies, devDependencies } from "./createDependecies";
 
 
+let [,,appName] = process.argv;
+
+console.log('appName', appName);
 
 
 const createFile = async function(){
@@ -17,7 +21,7 @@ const createFile = async function(){
   console.log(createReactSCSS())
 
   const project = {
-    title: 'myFirstReact'
+    title: appName
   }
 
   console.log(`Creating ${project.title}`)
@@ -50,28 +54,6 @@ const createFile = async function(){
 
   await shell.cd(project.title);
 
-  let dependencies = [
-    "@types/react",
-    "axios",
-    "node-sass",
-    "react",
-    "react-dom",
-    "react-inlinesvg"
-  ]
-
-  let devDependencies = [
-    "@testing-library/react",
-    "@types/jest",
-    "codecov",
-    "identity-obj-proxy",
-    "jest",
-    "jest-dom",
-    "parcel-bundler",
-    "sass",
-    "ts-jest",
-    "typescript"
-  ]
-
   for (const dependency of dependencies) {
     await shell.exec(`npm i ${dependency}`)
   }
@@ -79,12 +61,6 @@ const createFile = async function(){
   for (const dependency of devDependencies) {
     await shell.exec(`npm i -D ${dependency}`)
   }
-
-
-  // await shell.exec(`npm i ${[...dependencies]}`)
-  // await shell.exec(`npm i -D ${[...devDependencies]}`)
-
-
 };
 
 

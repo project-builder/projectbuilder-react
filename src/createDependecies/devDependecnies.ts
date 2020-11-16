@@ -1,14 +1,4 @@
-
-let dependencies = [
-    "@types/react",
-    "axios",
-    "node-sass",
-    "react",
-    "react-dom",
-    "react-inlinesvg"
-]
-
-let devDependencies = [
+const devDependencies = [
     "@testing-library/react",
     "@types/jest",
     "codecov",
@@ -20,3 +10,7 @@ let devDependencies = [
     "ts-jest",
     "typescript"
 ]
+
+export{
+    devDependencies
+}
