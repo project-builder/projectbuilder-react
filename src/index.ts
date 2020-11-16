@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as shell from 'shelljs';
 import * as fs from 'fs-extra';
 // import * as YAML from 'yamljs'
