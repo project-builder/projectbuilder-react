@@ -2,7 +2,8 @@
 const createReactSCSS = () =>
 `
 *{
-  color: blue;
+  margin: 0;
+  padding: 0;
 }
 `
 
