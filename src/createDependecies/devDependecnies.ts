@@ -1,16 +1,15 @@
 const devDependencies = [
-    "@testing-library/react",
-    "@types/jest",
-    "codecov",
-    "identity-obj-proxy",
-    "jest",
-    "jest-dom",
-    "parcel-bundler",
-    "sass",
-    "ts-jest",
-    "typescript"
+	'@testing-library/react',
+	'codecov',
+	'identity-obj-proxy',
+	'jest',
+	'jest-dom',
+	'parcel',
+	'sass',
+	'babel-jest',
+	'@babel/preset-env',
+	'@babel/preset-react',
+	'react-test-renderer',
 ]
 
-export{
-    devDependencies
-}
+export {devDependencies}
