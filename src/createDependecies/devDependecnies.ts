@@ -1,9 +1,9 @@
 const devDependencies = [
 	'@testing-library/react',
+    '@testing-library/jest-dom',
 	'codecov',
 	'identity-obj-proxy',
 	'jest',
-	'jest-dom',
 	'parcel',
 	'sass',
 	'babel-jest',
