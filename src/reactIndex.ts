@@ -5,8 +5,7 @@
 
 const reactIndex = (title: string) =>
 
-`
-import * as React from 'react';
+`import * as React from 'react';
 import {render} from 'react-dom';
 import './index.scss'
 
