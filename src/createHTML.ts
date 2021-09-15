@@ -14,7 +14,7 @@ const createHTML = (title: string) =>
   </head>
   <body>
     <div id="root"></div>
-    <script src='./app/index.jsx'></script>
+    <script type="module" src='./app/index.jsx'></script>
   </body>
 </html>
 `
