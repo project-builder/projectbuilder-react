@@ -14,7 +14,7 @@ return {
   },
   "babel": {
     presets: ['@babel/preset-env', '@babel/preset-react'],
-  }
+  },
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
@@ -27,7 +27,7 @@ return {
       "ts",
       "tsx",
       "js",
-      "jsx"
+      "jsx",
       "jpg",
       "pdf",
       "svg"
