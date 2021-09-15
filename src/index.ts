@@ -14,9 +14,6 @@ import { dependencies, devDependencies } from "./createDependecies";
 let [,,appName] = process.argv;
 
 const createFile = async function(){
-
-  console.log(createReactSCSS())
-
   const project = {
     title: appName
   }
